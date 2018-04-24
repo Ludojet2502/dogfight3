@@ -1,5 +1,7 @@
 package jpu2016.dogfight.controller;
 
+import jpu2016.dogfight.model.*;
+
 public class DogfightController {
 	private int TIME_SLEEP = 30;
 	
