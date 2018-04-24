@@ -9,8 +9,8 @@ public class UserOrder {
 	}
 	
 	public Order getOrder() {
-		return this.Order;
-	
+		return this.order;
+		 
 	}
 	
 	public int getPlayer() {
