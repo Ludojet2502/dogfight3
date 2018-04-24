@@ -1,5 +1,7 @@
 package jpu2016.dogfight.model;
 
+import java.util.ArrayList;
+
 public interface IDogfightModel {
 	
 		
@@ -27,7 +29,7 @@ public interface IDogfightModel {
 		
 	}
 	
-	public void setMobilesHabesMoved() {
+	public void setMobilesHavesMoved() {
 		
 	}
 		

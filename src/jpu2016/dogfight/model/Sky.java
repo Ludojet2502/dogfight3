@@ -1,17 +1,24 @@
 package jpu2016.dogfight.model;
 
+
+import java.awt.*;
+import java.util.*;
+
 public class Sky implements IArea{
 	
-	public Sky() {
-		
-	}
+	private Dimension dimension;
+	private Dimension width;
+	private Dimension height;
+	
+	
+	
 	
 	public Sky (Dimension dimension) {
-		
+		this.dimension=new Dimension(dimension);
 	}
 	
 	public Dimension getDimension() {
-		return dimension;
+		return this.dimension;
 	}
 	
 	public void setDimension(Dimension dimension) {
@@ -19,11 +26,11 @@ public class Sky implements IArea{
 	}
 	
 	public Image getImage() {
-		return image;
+		return this.image;
 	}
 	
 	public void setImage(Image image) {
-		return image;
+		this.image= image;
 	}
 	
 	
