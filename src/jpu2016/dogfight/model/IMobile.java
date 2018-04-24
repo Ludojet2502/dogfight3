@@ -2,15 +2,6 @@ package jpu2016.dogfight.model;
 
 public interface IMobile {
 	
-	private DogfightModel dogfightModel;
-	
-	public DogfightModel getDogfightModel() {
-		return dogfightModel;
-	}
-	
-	
-	
-	
 	public Direction getDirection() {
 		return direction;
 	}
@@ -55,8 +46,8 @@ public interface IMobile {
 		
 	}
 	
-	public void setDogfightModel(DogfightModel dogfightModel) {
-		this.dogfightModel=dogfightModel;
+	public setDogfightModel(IDogfightModel dogfightModel) {
+
 	}
 	
 	public boolean hit() {
