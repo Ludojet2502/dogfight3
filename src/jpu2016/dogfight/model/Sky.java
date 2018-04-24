@@ -7,6 +7,9 @@ import java.util.*;
 public class Sky implements IArea{
 	
 	private Dimension dimension;
+	private Dimension width;
+	private Dimension height;
+	
 	
 	
 	

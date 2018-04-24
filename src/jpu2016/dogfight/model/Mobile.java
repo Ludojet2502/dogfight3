@@ -3,11 +3,21 @@ package jpu2016.dogfight.model;
 public class Mobile implements IMobile{
 	
 	private int speed ;
+	private Dimension width;
+	private Dimension height;
+	private Position x;
+	private Position y;
+	private Position maxX;
+	private Position maxY;
+	private Direction UP;
+	private Direction Right;
+	private Direction Down;
+	private Direction Left;
 	
 	
 	public Mobile(Direction direction, Position position, Dimension dimension, int speed, String image) {
-		this.direction=direction;
-		this.position=position;
+		this.direction= direction;
+		this.position= position;
 		this.dimension=dimension;
 		this.speed=speed;
 		this.image=image;
@@ -92,6 +102,30 @@ public class Mobile implements IMobile{
 	
 	public Image getImage() {
 		return image;
+	}
+
+	@Override
+	public Direction setDirection(Direction direction) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Point getPosition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Image getImage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void placeInArea(IArea area) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
