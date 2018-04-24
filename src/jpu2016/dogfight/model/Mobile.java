@@ -1,6 +1,6 @@
 package jpu2016.dogfight.model;
 
-public class Mobile {
+public class Mobile implements IMobile{
 	
 	private int speed ;
 	
@@ -26,8 +26,8 @@ public class Mobile {
 		return position;
 	}
 	
-	public Dimention getDimention() {
-		return dimention;
+	public Dimension getDimension() {
+		return dimension;
 	}
 	
 	public int getSpeed() {

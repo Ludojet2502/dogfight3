@@ -1,11 +1,23 @@
 package jpu2016.dogfight.model;
 
-public class DogfightModel extends Observable {
+import java.util.ArrayList;
+
+public class DogfightModel extends Observable implements IADogfightModel{
+	
+	//private ArrayList<IMobile> mobiless;		
 	
 	public DogfightModel() {
 		
 	}
 	
+	//public ArrayList<IMobile> getMobiless() {		
+		//return mobiless;
+	//}
+
+	//public void setMobiless(ArrayList<IMobile> mobiless) {		
+	//	this.mobiless = mobiless;
+	//}
+
 	public IArea getArea() {
 		return iArea;
 	}
@@ -14,11 +26,11 @@ public class DogfightModel extends Observable {
 		
 	}
 	
-	public void addMobile(IMObile Mobile) {
+	public void addMobile(IMobile Mobile) {
 		
 	}
 	
-	public void removeMobile(IMObile Mobile) {
+	public void removeMobile(IMobile Mobile) {
 		
 	}
 	
