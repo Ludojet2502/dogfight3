@@ -11,8 +11,8 @@ public class GamePanel extends JPanel implements Observer {
 	public GamePanel(IGraphicsBuilder graphicBuilder) {
 		//IGraphicsBuilder graphicBuilder = new IGraphicsBuilder();
 	}
-	public update(Observable observable) {
-		
+	public void update(Observable observable) {
+		return;
 	}
 	public void paintComponent(Graphics graphic) {
 		
@@ -30,5 +30,10 @@ public class GamePanel extends JPanel implements Observer {
 	
 	public void setIGraphicsBuilder(IGraphicsBuilder graphicsBuilder) {
 		this.graphicsBuilder = graphicsBuilder;
+	}
+	@Override
+	public void update(Observable o, Object arg) {
+		// TODO Auto-generated method stub
+		
 	}
 }
