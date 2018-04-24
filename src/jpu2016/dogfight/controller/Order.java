@@ -8,4 +8,13 @@ public enum Order {
 	SHOOT,
 	NOP;
 	
+	protected UserOrder userOrder;
+	
+	public UserOrder getUserOrder() {
+		return userOrder;
+	}
+	
+	public void setUserOrder(UserOrder userOrder) {
+		this.userOrder = userOrder;
+	}
 }
