@@ -8,6 +8,11 @@ public class DogfightController implements IOrderPerformer {
 	private IDogfightModel dogfightModel;
 	private IViewSystem viewSystem; 
 	
+	public IViewSystem getIViewSystem() {
+		return viewSystem;
+	}
+	
+	
 	public DogfightController(IDogfightModel dogfightModel) {
 		this.dogfightModel = dogfightModel;
 	}
@@ -21,7 +26,7 @@ public class DogfightController implements IOrderPerformer {
 	}
 	
 	public void setViewSystem( IViewSystem viewSystem) {
-		
+		this.viewSystem = viewSystem;
 	}
 	
 	private void launchMissile( int player) {
