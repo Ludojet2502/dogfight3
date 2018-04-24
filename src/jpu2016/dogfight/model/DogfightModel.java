@@ -22,7 +22,7 @@ public class DogfightModel extends Observable implements IDogfightModel{
 	}
 
 	public IArea getArea() {
-		return this.iArea;
+		return this.Area;
 	}
 
 	public void buildArea (Dimension dimension) {

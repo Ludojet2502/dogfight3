@@ -9,7 +9,7 @@ public class Sky implements IArea{
 	private Dimension dimension;
 	private Dimension width;
 	private Dimension height;
-	
+	private Image image;
 	
 	
 	
