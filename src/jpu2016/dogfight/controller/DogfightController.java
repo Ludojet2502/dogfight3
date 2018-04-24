@@ -6,7 +6,8 @@ import jpu2016.dogfight.view.*;
 public class DogfightController implements IOrderPerformer {
 	private static int TIME_SLEEP = 30;
 	private IDogfightModel dogfightModel;
-	private IViewSystem viewSystem; 
+	private IViewSystem viewSystem;
+	private Missile missile;
 	
 	public IViewSystem getIViewSystem() {
 		return viewSystem;
@@ -38,12 +39,14 @@ public class DogfightController implements IOrderPerformer {
 	}
 	
 	private void launchMissile( int player) {
-		
+		Missile missile = new Missile(null, null);
 	}
 	
 	private void gameLoop() {
 		
 	}
+	
+	
 	
 	
 }
