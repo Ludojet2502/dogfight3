@@ -17,6 +17,14 @@ public class DogfightController implements IOrderPerformer {
 		this.dogfightModel = dogfightModel;
 	}
 	
+	public IDogfightModel getIDogFightModel() {
+		return dogfightModel;
+	}
+	
+	public void setIDogfightModel(IDogfightModel dogfightModel) {
+		this.dogfightModel = dogfightModel;
+	}
+	
 	public void orderPerform(UserOrder userOrder) {
 		
 	}
@@ -36,5 +44,6 @@ public class DogfightController implements IOrderPerformer {
 	private void gameLoop() {
 		
 	}
+	
 	
 }
