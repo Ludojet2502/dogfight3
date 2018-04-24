@@ -16,4 +16,8 @@ public class GamePanel extends JPanel implements Observer {
 	public void paintComponent(Graphics graphic) {
 		
 	}
+	
+	private Observable observable() {
+		return new Observable();
+	}
 }
