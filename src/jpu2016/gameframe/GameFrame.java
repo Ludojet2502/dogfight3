@@ -16,7 +16,7 @@ public class GameFrame extends JFrame implements KeyListener{
 		IGraphicsBuilder graphicBuilder = new IGraphicsBuilder();
 		Observable observable = new Observable();
 	}
-	public void keyPressed(KeyEvent keyEvent) {
+	public void (KeyEvent keyEvent) {
 		
 	}
 	public void keyReleased(KeyEvent keyEvent) {
