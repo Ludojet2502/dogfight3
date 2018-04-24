@@ -1,25 +1,28 @@
 package jpu2016.dogfight.model;
+import jpu2016.dogfight.controller.*;
+import jpu2016.dogfight.view.*;
 
 import java.util.ArrayList;
+import java.util.*;
 
-public class DogfightModel extends Observable implements IADogfightModel{
+public class DogfightModel extends Observable implements IDogfightModel{
 	
-	//private ArrayList<IMobile> mobiless;		
+	private ArrayList<IMobile> mobiles;		
 	
 	public DogfightModel() {
 		
 	}
 	
-	//public ArrayList<IMobile> getMobiless() {		
-		//return mobiless;
-	//}
+	public ArrayList<IMobile> getMobiless() {		
+		return mobiles;
+	}
 
-	//public void setMobiless(ArrayList<IMobile> mobiless) {		
-	//	this.mobiless = mobiless;
-	//}
+	public void setMobiless(ArrayList<IMobile> mobiless) {		
+		this.mobiles =mobiles;
+	}
 
 	public IArea getArea() {
-		return iArea;
+		return this.iArea;
 	}
 
 	public void buildArea (Dimension dimension) {
@@ -39,7 +42,7 @@ public class DogfightModel extends Observable implements IADogfightModel{
 	}
 	
 	public IMobile getMobileByPlayer(int player) {
-		return mobileByPlayer;
+		return this.mobileByPlayer;
 	}
 	
 	public void setMobilesHavesMoved() {
