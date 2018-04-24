@@ -7,8 +7,9 @@ import java.util.Observer;
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements Observer {
+	
 	public GamePanel(IGraphicsBuilder graphicBuilder) {
-		IGraphicsBuilder graphicBuilder = new IGraphicsBuilder();
+		//IGraphicsBuilder graphicBuilder = new IGraphicsBuilder();
 	}
 	public update(Observable observable) {
 		
@@ -19,5 +20,15 @@ public class GamePanel extends JPanel implements Observer {
 	
 	private Observable observable() {
 		return new Observable();
+	}
+	
+	private IGraphicsBuilder graphicsBuilder;
+	
+	public IGraphicsBuilder getIGraphicsBuilder() {
+		return graphicsBuilder;
+	}
+	
+	public void setIGraphicsBuilder(IGraphicsBuilder graphicsBuilder) {
+		this.graphicsBuilder = graphicsBuilder;
 	}
 }

@@ -1,6 +1,8 @@
 package jpu2016.dogfight.view;
 
-public class GraphicsBuilder {
+import jpu2016.gameframe.IGraphicsBuilder;
+
+public class GraphicsBuilder implements IGraphicsBuilder{
 	public GraphicsBuilder(IDogfightModel dogfightModel) {
 		IDogfightModel dogfightModel = new IDogfightModel();
 	}
